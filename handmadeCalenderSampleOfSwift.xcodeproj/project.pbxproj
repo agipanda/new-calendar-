@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A55FA601C141F0B005A66A7 /* FashionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A55FA5F1C141F0B005A66A7 /* FashionViewController.swift */; };
+		8A3F87921C267EBF008D81B2 /* FashionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3F87911C267EBF008D81B2 /* FashionViewController.swift */; };
 		8A55FA621C142583005A66A7 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A55FA611C142583005A66A7 /* SaveViewController.swift */; };
 		8AD362F51C02F19700D1BDEF /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8AD362F41C02F19700D1BDEF /* click.mp3 */; };
 		8AD362F71C13D75100D1BDEF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD362F61C13D75000D1BDEF /* AVFoundation.framework */; };
@@ -32,7 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8A55FA5F1C141F0B005A66A7 /* FashionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FashionViewController.swift; sourceTree = "<group>"; };
+		8A3F87911C267EBF008D81B2 /* FashionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FashionViewController.swift; sourceTree = "<group>"; };
 		8A55FA611C142583005A66A7 /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		8AD362F41C02F19700D1BDEF /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
 		8AD362F61C13D75000D1BDEF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -97,7 +97,7 @@
 				DEA538A21A2A0AE30092DCBA /* AppDelegate.swift */,
 				DE3BE56E1A5EDA2700C49B3C /* DeviseSize.swift */,
 				DEA538A41A2A0AE30092DCBA /* ViewController.swift */,
-				8A55FA5F1C141F0B005A66A7 /* FashionViewController.swift */,
+				8A3F87911C267EBF008D81B2 /* FashionViewController.swift */,
 				8A55FA611C142583005A66A7 /* SaveViewController.swift */,
 				DEA538A61A2A0AE40092DCBA /* Main.storyboard */,
 				DEA538A91A2A0AE40092DCBA /* Images.xcassets */,
@@ -236,9 +236,9 @@
 			files = (
 				DEA538A51A2A0AE30092DCBA /* ViewController.swift in Sources */,
 				8A55FA621C142583005A66A7 /* SaveViewController.swift in Sources */,
-				8A55FA601C141F0B005A66A7 /* FashionViewController.swift in Sources */,
 				DEA538A31A2A0AE30092DCBA /* AppDelegate.swift in Sources */,
 				DE3BE56F1A5EDA2800C49B3C /* DeviseSize.swift in Sources */,
+				8A3F87921C267EBF008D81B2 /* FashionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

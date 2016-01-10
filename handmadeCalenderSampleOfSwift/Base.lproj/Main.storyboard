@@ -25,7 +25,7 @@
                                 <rect key="frame" x="130" y="239" width="114" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.55717404770000001" blue="0.57172928329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="calendar">
+                                <state key="normal" title="share">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -94,13 +94,6 @@
                                     <action selector="getNextMonthData:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="udE-RN-Lut"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" id="JyA-iZ-f8L">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="handMadeCalendar" id="NM0-Ki-rsj"/>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B5a-7P-bLg">
                                 <rect key="frame" x="0.0" y="65" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -120,6 +113,13 @@
                                     <segue destination="zc6-75-3dC" kind="modal" id="rZ9-EX-6DG"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" id="JyA-iZ-f8L">
+                                <rect key="frame" x="0.0" y="21" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="handMadeCalendar" id="NM0-Ki-rsj"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -147,7 +147,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="24.5" y="-119.5"/>
+            <point key="canvasLocation" x="74.5" y="-156.5"/>
         </scene>
         <!--Save View Controller-->
         <scene sceneID="s1e-MB-BXp">
@@ -157,10 +157,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3bs-Dx-sdE">
-                                <rect key="frame" x="43" y="42" width="288" height="398"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="SMu-On-ZmP">
                                 <rect key="frame" x="50" y="494" width="276" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -178,18 +174,32 @@
                                     <action selector="button" destination="ynd-N9-OUz" eventType="touchUpInside" id="ZKc-X9-d9U"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4np-F5-5su">
+                                <rect key="frame" x="43" y="46" width="288" height="398"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="select today's fashion"/>
+                                <connections>
+                                    <action selector="photoSelectButtonTouchDown:" destination="ynd-N9-OUz" eventType="touchUpInside" id="koe-b2-h0x"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Dvf-xx-OVZ">
+                                <rect key="frame" x="50" y="46" width="283" height="398"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="fashionimage" destination="Dvf-xx-OVZ" id="uou-x7-cGV"/>
+                        <outlet property="photoSelectButton" destination="4np-F5-5su" id="ykJ-3Q-DEY"/>
                         <outlet property="titleTextField" destination="SMu-On-ZmP" id="uDB-lS-wti"/>
                         <segue destination="TlC-FE-0ms" kind="modal" identifier="toFashionVC" id="23W-7C-RRf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qE-xq-paB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="552.5" y="631.5"/>
+            <point key="canvasLocation" x="668.5" y="647.5"/>
         </scene>
         <!--Fashion View Controller-->
         <scene sceneID="IQ8-3I-WPq">
@@ -283,7 +293,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tJx-SU-aTr"/>
-        <segue reference="23W-7C-RRf"/>
+        <segue reference="scY-hw-H8v"/>
+        <segue reference="rZ9-EX-6DG"/>
     </inferredMetricsTieBreakers>
 </document>

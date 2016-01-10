@@ -9,7 +9,8 @@
 import UIKit
 import AVFoundation
 
-class FashionViewController: UIViewController {
+class FashionViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
     
     //メンバ変数の設定（配列格納用）
     var count: Bool = false
@@ -556,6 +557,7 @@ class FashionViewController: UIViewController {
         setupCalendarTitleLabel()
     }
     
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

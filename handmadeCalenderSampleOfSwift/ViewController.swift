@@ -548,7 +548,7 @@ class ViewController: UIViewController {
         generateCalendar()
         setupCalendarTitleLabel()
     }
-    
+     
     //次月を表示するメソッド
     func nextCalendarSettings() {
         removeCalendarButtonObject()
