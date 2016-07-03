@@ -13,6 +13,8 @@ import AVFoundation
 import QuartzCore
 
 class ViewController: UIViewController {
+    
+    var logoImageView: UIImageView!
 
     //メンバ変数の設定（配列格納用）
     var count: Bool = false
@@ -76,8 +78,12 @@ class ViewController: UIViewController {
         //audioPlayer.delegate = self
         //audioPlayer.prepareToPlay()
         
-    
-    
+        self.view.backgroundColor = UIColor.whiteColor()
+        self.logoImageView = UIImageView(frame: CGRectMake(0, 0, 204, 77))
+        
+        self.logoImageView.image = UIImage(named: "logo")
+        self.view.addSubview(self.logoImageView)
+        
         //現在起動中のデバイスを取得（スクリーンの幅・高さ）
         let screenWidth  = DeviseSize.screenWidth()
         let screenHeight = DeviseSize.screenHeight()
@@ -204,6 +210,14 @@ class ViewController: UIViewController {
         //初期表示時のカレンダーをセットアップする
         setupCurrentCalendar()
     }
+    
+//    override func viewDidAppear(animated: Bool) {
+//        UIView.animateWithDuration(0.3, delay: 1.0, options: UIViewAnimationOption.CurveEaseOut, animations: { () in self.logoImageView.transform = CGAffineTransformMakeScale(0.9, 0.9)}, completion: { (Bool) in })
+//        
+//        delay: 1.3,
+//        options: animateWithDuration(0.2,
+//        delay: 1.0, option: UIViewAnimattionOptions.CurveEaseOut, animations: { () in self.logoImageView.transform = CGAffineTransformMakeScale())
+//    }
     
     //曜日ラベルの動的配置関数
     func setupCalendarLabel(array: NSArray) {

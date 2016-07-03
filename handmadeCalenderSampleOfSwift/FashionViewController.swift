@@ -485,6 +485,7 @@ class FashionViewController: UIViewController, UIImagePickerControllerDelegate, 
         audioPlayer = try? AVAudioPlayer(contentsOfURL: audioPath)
         audioPlayer.play()
         
+        //コードで画面遷移する
         performSegueWithIdentifier("toSaveVC", sender: nil)
         
         

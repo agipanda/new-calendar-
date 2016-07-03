@@ -15,6 +15,7 @@ class SaveViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet var titleTextField: UITextField!
     @IBOutlet var photoSelectButton: UIButton!
     @IBOutlet var mainImageView: UIImageView!
+    @IBOutlet var displayDateLabel: UILabel!
     
     
     @IBAction func photoSelectButtonTouchDown(sender: AnyObject){
@@ -37,9 +38,6 @@ class SaveViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
     
-    @IBAction func button() {
-        performSegueWithIdentifier("toFashionVC", sender: nil)
-    }
     
     @IBOutlet var fashionimage: UIImageView!
     
@@ -60,6 +58,11 @@ class SaveViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func save() {
+    
+    }
+    
 
     
 
