@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CADE6CE920DDFFB9B3FE59648380485C09CC7CBA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0784272B582DD7C353AFC4D6B74399F3253BDF1D" : 0,
+    "CADE6CE920DDFFB9B3FE59648380485C09CC7CBA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E120FFFD-65F4-46A0-9ACA-5327C39C7A66",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0784272B582DD7C353AFC4D6B74399F3253BDF1D" : "handmadeCalenderSampleOfSwift",
+    "CADE6CE920DDFFB9B3FE59648380485C09CC7CBA" : "new-calendar-\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "handmadeCalenderSampleOfSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "handmadeCalenderSampleOfSwift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:fumiyasac\/handMadeCalendarOfSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0784272B582DD7C353AFC4D6B74399F3253BDF1D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/agipanda\/new-calendar-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CADE6CE920DDFFB9B3FE59648380485C09CC7CBA"
+    }
+  ]
+}
